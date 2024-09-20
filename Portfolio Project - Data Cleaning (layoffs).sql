@@ -40,12 +40,6 @@ LIKE layoff;
 INSERT layoff_staging 
 SELECT * FROM layoff;
 
--- Data Cleaning Process Overview:
--- 1. Remove duplicates
--- 2. Standardize and fix data inconsistencies
--- 3. Handle missing values
--- 4. Remove unnecessary columns and rows
-
 -- Step 3: Remove Duplicates
 -- Checking for duplicates in the staging table using ROW_NUMBER
 SELECT company, industry, total_laid_off, `date`,
